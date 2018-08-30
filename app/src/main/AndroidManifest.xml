@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itam.ezhome">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".user_session.UserSignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".user_session.UserLoginActivity"/>
+        <activity android:name=".menu.mainpage" />
+        <activity android:name=".menu.masterbedroom"></activity>
+        <activity android:name=".menu.readingroom"></activity>
+        <activity android:name=".menu.guestroom"></activity>
+        <activity android:name=".menu.kitchen"></activity>
+        <activity android:name=".menu.livingroom"></activity>
+    </application>
+
+</manifest>

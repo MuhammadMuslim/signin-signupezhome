@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_bright">;
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="478dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.93"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingTop="20px">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="127dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top|center"
+                android:layout_weight="1"
+                android:src="@drawable/icon_home"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonroom1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif"
+            android:text="Master Bedroom"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/buttonroom2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="197dp"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif"
+            android:text="Reading Room"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/buttonroom3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="138dp"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif"
+            android:text="Guest Room"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/buttonroom4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="74dp"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif"
+            android:text="Kitchen"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/buttonroom5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif"
+            android:text="Living Room"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/EmailShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/EmailShow"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_dark"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:text="Welcome," />
+
+</RelativeLayout>
